@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifekraft | The Homoeopathic & Lifestyle Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        /* Brand Color extracted from Flyer */
+        .brand-blue {
+            background-color: #2d6ea8 !important;
+        }
+        .text-brand-blue {
+            color: #2d6ea8 !important;
+        }
+        .hero {
+            /* Generic wellness background image */
+            background: linear-gradient(rgba(45, 110, 168, 0.9), rgba(45, 110, 168, 0.8)), url('https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+        }
+        .doctor-card {
+            border-top: 4px solid #2d6ea8;
+        }
+        .service-icon {
+            font-size: 40px;
+            color: #2d6ea8;
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            display: flex;
+            align-items: flex-start; /* Aligns icon with top line of address */
+            font-size: 1.1rem;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #2d6ea8;
+            margin-top: 4px; /* Slight adjustment for multi-line text */
+        }
+        section {
+            padding: 50px 0;
+        }
+        .collection .collection-item {
+            background-color: transparent;
+        }
+        .btn-large {
+            background-color: #fff;
+            color: #2d6ea8;
+            font-weight: bold;
+        }
+        .btn-large:hover {
+            background-color: #eee;
+        }
+        /* Responsive Map Container */
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            position: relative;
+            height: 0;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="brand-blue">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo truncate">Lifekraft</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <header class="hero center-align">
+        <div class="container">
+            <h1 class="header">Lifekraft</h1>
+            <h4 class="light">The Homoeopathic & Lifestyle Clinic</h4>
+            <p class="flow-text">Holistic Wellness | Diet Consultation | Lifestyle Disease Management</p>
+            <br>
+            <a href="tel:+918547378702" class="waves-effect waves-light btn-large">
+                <i class="material-icons left">phone</i>Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card horizontal doctor-card z-depth-2">
+                    <div class="card-stacked">
+                        <div class="card-content center-align">
+                            <h5>Dr. Rajashree C. G.</h5>
+                            <p><strong>B.H.M.S. (Reg. No. 9251), M. Sc. CND</strong></p>
+                            <div class="divider" style="margin: 15px 0;"></div>
+                            <div class="chip brand-blue white-text">Homoeopathic Physician</div>
+                            <div class="chip brand-blue white-text">Diet Consultant</div>
+                            <div class="chip brand-blue white-text">Certified Yoga Instructor</div>
+                            <br><br>
+                            <p class="grey-text text-darken-2">Lifekraft focuses on a holistic approach to health, offering safe and effective treatments using natural remedies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="grey lighten-4">
+        <div class="container">
+            <h3 class="center-align text-brand-blue">Our Services</h3>
+            <p class="center-align">Effective Homoeopathic treatment & Holistic Consultation</p>
+            <br>
+            
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable small">
+                        <div class="card-content">
+                            <i class="material-icons service-icon">healing</i>
+                            <span class="card-title activator grey-text text-darken-4">Acute & Chronic<i class="material-icons right">more_vert</i></span>
+                            <p>Treatment for common ailments and long-term health conditions.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Conditions<i class="material-icons right">close</i></span>
+                            <ul class="browser-default">
+                                <li>Allergic complaints</li>
+                                <li>Common cold, fever, infections</li>
+                                <li>Arthritis & Back pain</li>
+                                <li>Diabetes & High Cholesterol</li>
+                                <li>Thyroid & Liver complaints</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable small">
+                        <div class="card-content">
+                            <i class="material-icons service-icon">face</i>
+                            <span class="card-title activator grey-text text-darken-4">Specialized Care<i class="material-icons right">more_vert</i></span>
+                            <p>Focused treatments for women, children, and elderly care.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Specialities<i class="material-icons right">close</i></span>
+                            <ul class="browser-default">
+                                <li>Paediatric problems</li>
+                                <li>Gynaecological issues (PCOD)</li>
+                                <li>Geriatric (Elderly) problems</li>
+                                <li>Fertility problems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable small">
+                        <div class="card-content">
+                            <i class="material-icons service-icon">self_improvement</i>
+                            <span class="card-title activator grey-text text-darken-4">Wellness & Diet<i class="material-icons right">more_vert</i></span>
+                            <p>Holistic management for a healthier lifestyle for all ages.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Lifestyle<i class="material-icons right">close</i></span>
+                            <ul class="browser-default">
+                                <li>Diet Consultation for all ages</li>
+                                <li>Holistic Wellness Consultation</li>
+                                <li>Lifestyle Disease Management</li>
+                                <li>Obesity management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable small">
+                        <div class="card-content">
+                            <i class="material-icons service-icon">spa</i>
+                            <span class="card-title activator grey-text text-darken-4">Skin, Hair & GI<i class="material-icons right">more_vert</i></span>
+                            <p>Targeted natural remedies for specific bodily systems.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Treatments<i class="material-icons right">close</i></span>
+                            <ul class="browser-default">
+                                <li>Skin & Hair complaints</li>
+                                <li>Recurring boils</li>
+                                <li>Gastrointestinal problems</li>
+                                <li>Kidney Stones</li>
+                                <li>Recurring infections (ENT)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable small">
+                        <div class="card-content">
+                            <i class="material-icons service-icon">psychology</i>
+                            <span class="card-title activator grey-text text-darken-4">Mental Wellness<i class="material-icons right">more_vert</i></span>
+                            <p>Support for mental and emotional well-being.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Conditions<i class="material-icons right">close</i></span>
+                            <ul class="browser-default">
+                                <li>Depression</li>
+                                <li>Sleep disorders</li>
+                                <li>Migraine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h3 class="center-align text-brand-blue">Visit Us</h3>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel z-depth-1">
+                        <h5><i class="material-icons left">access_time</i> Consultation Hours</h5>
+                        <table class="highlight">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Monday - Friday</strong></td>
+                                    <td>4:00 PM - 7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Saturday</strong></td>
+                                    <td>10:00 AM - 12:30 PM<br>4:00 PM - 7:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sunday</strong></td>
+                                    <td class="red-text text-lighten-2">Prior appointment only</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 contact-info">
+                    <div class="card-panel z-depth-1">
+                        <h5><i class="material-icons left">location_on</i> Location</h5>
+                        
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6608.820764130455!2d76.33181164076548!3d9.964847895434621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08732532508fc1%3A0x116929b3c87fe3d2!2sLifekraft%20Homoeopathic%20%26%20Lifestyle%20Clinic!5e0!3m2!1sen!2sus!4v1763902832983!5m2!1sen!2sus" 
+                                width="600" height="450" style="border:0;" 
+                                allowfullscreen="" loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <p>
+                            <span>
+                                <strong>Lifekraft Homoeopathic & Lifestyle Clinic</strong><br>
+                                Shree's Building Complex<br>
+                                Puthiya Road Junction, Eroor<br>
+                                Thrippunithura, Kerala 682306
+                            </span>
+                        </p>
+                        <div class="divider"></div>
+                        <h5>Contact</h5>
+                        <p>
+                            <i class="material-icons">phone</i> 
+                            <a href="tel:+918547378702" class="text-brand-blue"> +91 85473 78702</a>
+                        </p>
+                        <p>
+                            <i class="material-icons">language</i> 
+                            <a href="http://www.lifekraft.in" class="text-brand-blue" target="_blank">www.lifekraft.in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer brand-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h5 class="white-text">Lifekraft Clinic</h5>
+                    <p class="grey-text text-lighten-4">Safe and effective treatments using natural remedies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2025 Lifekraft Homoeopathic & Lifestyle Clinic
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>
